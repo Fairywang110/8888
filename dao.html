@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style type="text/css">
+        html,body{
+        	width:100%;
+        	height:100%;
+            margin:0px auto;
+            padding:0px auto;
+            background-image: url('img/bg.jpg');
+            background-size: cover;
+            z-index: 1;
+        }
+        #dao{
+        	position: absolute;
+        	top:0%;
+        	left:0%;
+        	width:100%;
+        	height:90%;
+        	z-index:2;
+        	animation:dao 4s linear 1;	
+        	z-index:4;
+        }
+        @keyframes dao{
+        	0%{opacity:0;
+        	transform:scale(0)}
+        	50%{opacity:1}
+        	100%{transform:scale(1)}
+        }
+       
+        #daocha{
+        	width:100%;
+        	height:100%;
+        	position:absolute;
+        	top:0%;
+        	left:0%;
+        }
+        #content{
+        	width:100%;
+        	height:100%;
+        	position: absolute;
+        	top: 0%;
+        	left:0%;
+        }
+        #next{
+            	position: absolute;
+			    top: 75%;
+			    left: 90%;
+			    z-index: 4;
+			    animation: nt 2s linear infinite;
+            }
+            @keyframes nt{
+            	0%{opacity:0}
+            	100%{opacity:1}
+            }
+    </style>
+    <script type="text/javascript">
+	  	var i=1;
+	  	function next(){
+	  		i++;
+	  		if(i>=3){
+	  			i=3;
+	  		}
+	  		document.getElementById("dao").src="img/dao"+i+".PNG";
+	  	}
+         
+	  </script>
+  </head>
+  
+  <body>    
+      <img id="dao" src="img/dao1.PNG" onclick="next()" > 
+      <img id="daocha" src="img/daocha.png" />
+      <img id="content" src="img/dcontent.png">
+      <a href="nian1.html"><img id="next" src="img/next.png"></a>
+  </body>
+</html>

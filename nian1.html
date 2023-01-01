@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>曰茶去</title>
+		<style>
+		body{
+        	width:100%;
+        	height:100%;
+            margin:0px auto;
+            padding:0px auto;
+            position:absolute;
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            z-index:1;
+        }
+		#niancha{
+			width: 15%;
+		    height: 5%;
+		    position: absolute;
+		    top: 7.5%;
+		    left: 42%;
+			z-index:2;
+		}
+		#nian1{
+			    width: 70%;
+			    height: 50%;
+			    position: absolute;
+			    top: 25%;
+			    left: 17%;
+		}	
+		#content{
+			width: 70%;
+		    height: 6%;
+		    position: absolute;
+		    top: 85.5%;
+		    left: 24%;
+		    animation:nian 5s linear 1;
+		}
+		#zhuyi{
+			    width: 25%;
+			    height: 2%;
+			    position: absolute;
+			    top: 92%;
+			    left: 45%;
+		    animation:nian 5s linear 1;
+		}
+		@keyframes nian{
+			0%{opacity:0}
+			100%{opacity:1}
+		}
+		a{
+			text-decoration: none;
+			color:black;
+		}
+		</style>
+		<script type="text/javascript">
+			$("#nian1").touchmove(function(){
+				location.href="index12.html";
+			})
+		</script>
+	</head>
+	<body>
+		<a href="nian2.html" target="_self">
+			<img id="niancha" src="img/niancha.png"/>
+			<img id="nian1" src="img/nian1.png">
+			<img id="content" src="img/ncontent1.png">
+			<img id="zhuyi" src="img/ncontent2.png">
+		</a>
+	</body>
+</html>

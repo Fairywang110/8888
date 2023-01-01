@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>曰茶去</title>
+		<style>
+		body{
+        	width:100%;
+        	height:100%;
+            margin:0px auto;
+            padding:0px auto;
+            position:absolute;
+            background-image: url('img/bg.jpg');
+            background-size: cover;
+            z-index:1;
+        }
+		#niancha{
+			width: 15%;
+		    height: 5%;
+		    position: absolute;
+		    top: 7.5%;
+		    left: 42%;
+			z-index:2;
+		}
+		#nian1{
+			    width: 70%;
+			    height: 50%;
+			    position: absolute;
+			    top: 25%;
+			    left: 17%;
+			    z-index: 3;
+		}	
+		#content{
+			width: 66%;
+		    height: 6%;
+		    position: absolute;
+		    top: 85.5%;
+		    left: 24%;
+		    animation:nian 5s linear 1;
+		}
+		#zhuyi{
+			    width: 25%;
+			    height: 2%;
+			    position: absolute;
+			    top: 92%;
+			    left: 45%;
+		    animation:nian 5s linear 1;
+		}
+		@keyframes nian{
+			0%{opacity:0}
+			100%{opacity:1}
+		}
+		#chaye1{
+			width: 8%;
+		    height: 5%;
+		    position: absolute;
+		    top: 24%;
+		    left: 68%;
+		    opacity: 0;
+		    animation: dong 4s linear 1;
+		    z-index: 2;
+		}
+		#chaye2{
+			width: 35%;
+		    height: 11%;
+		    position: absolute;
+		    top: 31%;
+		    left: 30%;
+		    z-index: 3;
+		}
+		#fangcha{
+			width: 10%;
+		    height: 10%;
+		    position: absolute;
+		    top: 20%;
+		    left: 68%;
+		    opacity: 0;
+		    z-index: 1;
+		    animation: dong 4s linear 1;
+		}
+		@keyframes dong{
+			0%{opacity: 1;}
+			25%{transform: translateX(-220px);
+			opacity: 1;}
+			75%{opacity: 1;}
+			80%{opacity: 1;}
+			100%{opacity:0;}
+		}
+		#next{
+            	position: absolute;
+			    top: 75%;
+			    left: 90%;
+			    z-index: 4;
+			    animation: nt 2s linear infinite;
+            }
+            @keyframes nt{
+            	0%{opacity:0}
+            	100%{opacity:1}
+            }
+		</style>
+		<script type="text/javascript">
+	  	var i=2
+	  	function next(){
+	  		i++;
+	  		if(i>=3){
+	  			i=3;
+	  		}
+	  		document.getElementById("nian1").src="img/nian"+i+".PNG";
+	  		document.getElementById("chaye2").style.opacity="0";
+	  		document.getElementById("nian1").style.width="100%";
+	  		document.getElementById("nian1").style.height="90%";
+	  		document.getElementById("nian1").style.top="1%";
+	  		document.getElementById("nian1").style.left="0%";
+	  		
+	  	}
+	  </script>
+	</head>
+	<body>
+		<img id="niancha" src="img/niancha.png"/>
+		<img id="nian1" src="img/nian1.png" onclick="next()">
+		<img id="content" src="img/ncontent3.png">
+		<img id="zhuyi" src="img/ncontent2.png">
+		<img id="chaye1" src="img/chaye1.png">
+		<img id="fangcha" src="img/fangcha.png">
+		<img id="chaye2" src="img/chaye2.png">
+		<a href="si1.html"><img id="next" src="img/next.png"></a>
+	</body>
+</html>

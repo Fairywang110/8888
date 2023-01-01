@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <style type="text/css">
+	        html,body{
+	        	width:100%;
+	        	height:100%;
+                margin:0px auto;
+                padding:0px auto;
+            	background-image:url("img/bg.jpg");
+            	background-size:cover;
+            	background-position:center;
+            	background-repeat:no-repeat;	
+            }
+            .dituo{
+            	width: 40%;
+			    height: 5%;
+			    position: absolute;
+			    top: 73.5%;
+			    left: 30%;
+            }
+            #chaxian{
+            	width:25%;
+            	height:25%;
+            	position:absolute;
+            	top:16%;
+            	left:35%;
+            	transform: rotateY(180deg);
+            	z-index:2;
+            	animation:come 3s linear 1 ,dong 3s ease 3;
+            }
+            @keyframes dong{
+            	
+            	25%{transform: translateX(-60px)}
+            	50%{transform:translateY(60px)}
+            	75%{transform: translateX(40px)}
+            	100%{transform: translateY(-40px)}
+            }
+            #chahu{
+            	width:100%;
+            	height:100%;
+            	position:absolute;
+            	top:0%;
+            	left:0%;
+            	animation:come 5s linear 1;
+            }
+            #wutang{
+				width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    top: 0%;
+			    left: 0%;
+			}
+            #content{
+				width: 66%;
+			    height: 6%;
+			    position: absolute;
+			    top: 85.5%;
+			    left: 24%;
+			    
+			}
+            #zhuyi{
+			    width: 54%;
+			    height: 2%;
+			    position: absolute;
+			    top: 92%;
+			    left: 32%;
+		        
+		    }
+            #tang{
+            	width: 50%;
+			    height: 30%;
+			    position: absolute;
+			    top: 23%;
+			    left: 25%;
+			    z-index: 1;
+            }
+            #sanjiao{
+            	width:100%;
+            	height:100%;
+            	position: absolute;
+            	top:0%;
+            	left:0%;
+            	
+            }
+            #tangfu{
+            	width: 100%;
+			    height: 90%;
+			    position: absolute;
+			    top: 0%;
+			    left:0%;
+			    z-index: 3;
+            }
+            #next{
+            	position: absolute;
+			    top: 75%;
+			    left: 90%;
+			    z-index: 4;
+			    animation: nt 2s linear infinite;
+            }
+            @keyframes nt{
+            	0%{opacity:0}
+            	100%{opacity:1}
+            }
+	    </style>
+	</head>
+	<body>
+		<img id="wutang" src="img/wutang.png"/>
+		<img class="dituo" src="img/chatuo.png"/>
+		<img id="chahu" src="img/chahu.png" /><img id="chaxian" src="img/chaxian2.png"/>
+		<img id="tang" src="img/tang2.png" />
+		<img id="content" src="img/scontent2.png">
+		<img id="zhuyi" src="img/szhuyi21.png">
+		<img id="sanjiao" src="img/xsanjiao.png">
+		<img id="tangfu" src="img/tangfu.png"/>
+		<a href=""><img id="next" src="img/next.png"></a>
+	</body>
+</html>
